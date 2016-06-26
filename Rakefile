@@ -12,7 +12,7 @@ task :compile do
       title:File.open(f).to_a[0].chomp,
       text:File.open(f).to_a[1..-1].join
     }
-    File.symlink "index.html", result.last[:slug] if !File.exists?(result.last[:slug])
+    File.symlink "index.html", "#{result.last[:slug]}.html" if !File.exists?("#{result.last[:slug]}.html")
   end 
   File.write("index.html", File.open("index.tmpl").read.gsub(/###___REPLACE_HERE___/, result.reverse.map{|a| a.to_json}.join(",")))
 end
