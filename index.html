@@ -58,7 +58,7 @@ var Application = React.createClass({
   transitionProps: function(title){
     return {onClick: function(){
       history.pushState(null,null,title);
-      $('html,body').animate({scrollTop: document.getElementById("post").getBoundingClientRect().height},500,"easeOutExpo");
+      $('html,body').animate({scrollTop: document.getElementById("post").getBoundingClientRect().height-35},500,"easeOutExpo");
       navigated();
     }}
   },
