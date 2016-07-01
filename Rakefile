@@ -1,10 +1,13 @@
 require 'json'
 require 'date'
+require 'uglifier'
 
 desc 'compile blog files into json data and craete index.html from index.tmpl'
 task :compile do
+  js = ["jquery.min", "jquery.easing.1.3.min", "skel.min", "util", "marked.min", "react.min", "react-dom.min", "main"]
+  File.write("./assets/js/uglified.js", Uglifier.new.compile(js.map{|e| File.read("./assets/js/#{e}.js")}.join))
   result = []
-  Dir.glob('./blogs/*.md').each do|f|
+  Dir.glob('./blogs/*.md').each do |f|
     result << {
       key:result.size+1,
       date:Date.parse(File.basename(f)[0..7]).strftime("%Y.%m.%d"),
