@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    execjs (2.7.0)
+    uglifier (3.0.0)
+      execjs (>= 0.3.0, < 3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  uglifier
+
+BUNDLED WITH
+   1.11.2

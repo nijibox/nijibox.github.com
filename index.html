@@ -8,27 +8,51 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-
+    <script src="assets/js/uglified.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
   </head>
   <body class="landing">
     <div id="react-app"></div>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.easing.1.3.min.js"></script>
-
-		<script src="assets/js/skel.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <script src="assets/js/marked.min.js"></script>
-    <script src="assets/js/react.min.js"></script>
-    <script src="assets/js/react-dom.min.js"></script>
     <script>
+
+// Polyfill for Object.assign
+// https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign#Polyfill
+if (typeof Object.assign != 'function') {
+  Object.assign = function(target) {
+    'use strict';
+    if (target == null) {
+      throw new TypeError('Cannot convert undefined or null to object');
+    }
+
+    target = Object(target);
+    for (var index = 1; index < arguments.length; index++) {
+      var source = arguments[index];
+      if (source != null) {
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key];
+          }
+        }
+      }
+    }
+    return target;
+  };
+}
+
+/*
+ * Components
+ */
 var Application = React.createClass({
   propTypes: {
     location: React.PropTypes.string.isRequired
   },
   transitionProps: function(title){
-    return {onClick: function(){history.pushState(null,null,title);navigated();$('html,body').animate({scrollTop: document.getElementById("post").getBoundingClientRect().height},400,"easeInOutQuart"); } }
+    return {onClick: function(){
+      history.pushState(null,null,title);
+      $('html,body').animate({scrollTop: document.getElementById("post").getBoundingClientRect().height-35},500,"easeOutExpo");
+      navigated();
+    }}
   },
   render: function(){
     page = window.location.pathname.split('/').pop().split('#').shift()
@@ -55,7 +79,7 @@ var Application = React.createClass({
     return React.createElement('container', {},
       React.createElement('header', { id:"header", className:"alt"},
         React.createElement('h3', {},
-          React.createElement('a', {href:'index.html'}, 'NIJIBOX Engineer Blog')
+          React.createElement('a', {href:'/'}, 'NIJIBOX Engineer Blog')
         )
       ),
       React.createElement('section', {id:"banner"},
