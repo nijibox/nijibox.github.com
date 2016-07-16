@@ -22,7 +22,6 @@ task :compile do
   end 
   File.write("index.html", File.open("index.tmpl").read.gsub(/###___REPLACE_HERE___/, result.reverse.map{|a| a.to_json}.join(",")))
   SitemapGenerator::Sitemap.default_host = 'http://tech.nijibox.jp'
-  SitemapGenerator::Sitemap.public_path = ''
   SitemapGenerator::Sitemap.create do
     add "/", :changefreq => 'always'
     result.each do |page|
