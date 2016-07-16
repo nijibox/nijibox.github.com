@@ -1,7 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    builder (3.2.2)
     execjs (2.7.0)
+    sitemap_generator (5.1.0)
+      builder
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
 
@@ -9,7 +12,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  sitemap_generator
   uglifier
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
