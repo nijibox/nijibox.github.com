@@ -14,7 +14,7 @@
 
 例えばそう、下のような！！
 
-![入れないと有名なヨドバシ梅田](blogs/20160718-phpconwest/yodobashi_umeda.jpg)
+![paiza](blogs/20160627-yochiyochi-nb/paiza.png)
 
 諸々の事情によりモザイクをかけておりますが、
 
