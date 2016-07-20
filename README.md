@@ -7,4 +7,3 @@
 
 ブログの生成は`docker-compose up`するだけ。Preview動作確認したい時は`heroku create && git push heroku master`すれば動く。ただの静的なWebサイトなので、Localでの動作確認はお好きな感じでどうぞ。
 
-hogehoge~
