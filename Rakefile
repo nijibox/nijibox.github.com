@@ -2,7 +2,6 @@ require 'json'
 require 'date'
 require 'uglifier'
 require 'sitemap_generator'
-require 'byebug'
 
 Encoding.default_external = "utf-8"
 
