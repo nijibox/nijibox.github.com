@@ -4,7 +4,7 @@ BEAR.Sundayの講演会が行われました
 2016年10月17日にPHPフレームワークBEAR.Sunday開発者である郡山昭仁さんにお越しいただき、講演をしていただきました。
 開催場所が少し離れていたもののネットワーク越しでも聞きたい！と多くのメンバーが参加しました。
 
-![lecture](blogs/20161017-bearsunday/lecture.jpg)
+![lecture](blogs/20161111-bearsunday/lecture.jpg)
 
 #BEAR.Sundayについて
 BEAR.Sundayは以下の３つのオブジェクトフレームワークで構築されています。  
@@ -27,7 +27,7 @@ DIは様々なところで実装しているのを見かけますが、AOPの実
 一通りの講演を終えた後、BEAR.Sundayについてや郡山さんの考え方などの質疑応答があり、  
 大変興味深いお話をしていただけました。
 
-![after](blogs/20161017-bearsunday/after.jpg)
+![after](blogs/20161111-bearsunday/after.jpg)
 
 ###もっとエンジニアはこうして行くべきではないか
 フレームワークを作成しようというシンプルな動機から完成までたどり着くのは難しいものであるにも関わらず、  
