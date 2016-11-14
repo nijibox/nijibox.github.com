@@ -1667,7 +1667,6 @@
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 1em 0;
-		text-transform: uppercase;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1809,7 +1808,6 @@
 	header p {
 		margin: 0 0 1.5em 0;
 		position: relative;
-		text-transform: uppercase;
 	}
 
 	header h2 + p {
@@ -1951,7 +1949,6 @@
 			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
-			text-transform: none !important;
 		}
 
 		.select-wrapper:before {
@@ -2014,7 +2011,6 @@
 				font-family: FontAwesome;
 				font-style: normal;
 				font-weight: normal;
-				text-transform: none !important;
 			}
 
 			input[type="checkbox"] + label:before,
@@ -2185,7 +2181,6 @@
 			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
-			text-transform: none !important;
 		}
 
 		.icon > .label {
@@ -2541,7 +2536,6 @@
 		padding: 0 1.5em;
 		text-align: center;
 		text-decoration: none;
-		text-transform: uppercase;
 		white-space: nowrap;
 	}
 
@@ -3692,7 +3686,6 @@
 					font-family: FontAwesome;
 					font-style: normal;
 					font-weight: normal;
-					text-transform: none !important;
 				}
 
 				#header a[href="#nav"]:before {
@@ -3788,7 +3781,6 @@
 		padding: 3em 2em;
 		position: fixed;
 		right: 0;
-		text-transform: uppercase;
 		top: 0;
 		visibility: hidden;
 		width: 20em;
@@ -3855,7 +3847,6 @@
 				font-family: FontAwesome;
 				font-style: normal;
 				font-weight: normal;
-				text-transform: none !important;
 			}
 
 			#nav .close:before {
@@ -4029,7 +4020,6 @@
 			color: #fff;
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
-			text-transform: uppercase;
 		}
 
 		#banner .icon {
@@ -4207,7 +4197,6 @@
 			font-size: 0.9em;
 			margin: 0 0 2em 0;
 			padding: 0;
-			text-transform: uppercase;
 		}
 
 			#footer .copyright li {
