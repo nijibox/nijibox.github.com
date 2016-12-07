@@ -51,6 +51,31 @@ namespace :compile do
   
   desc 'Generate RSS feed from json data'
   task :feed do
+    result = []
+    Dir.glob('./blogs/*.md').each do |f|
+      entry = {
+        key:result.size+1,
+        date:Date.parse(File.basename(f)[0..7]).strftime("%Y-%m-%dT00:00:00Z+0900"),
+        slug:File.basename(f)[9..-4],
+        title:File.open(f).to_a[0].chomp,
+        text:File.open(f).to_a[1..-1].join
+      }
+      result << {
+        :date => entry[:date],
+        :feed => <<-EOS
+          <entry>
+            <title>#{entry[:title]}</title>
+            <link>http://tech.nijibox.jp/#{entry[:slug]}</link>
+            <id>http://tech.nijibox.jp/#{entry[:slug]}</id>
+            <description><![CDATA[#{entry[:text]}]]></description>
+            <published>#{entry[:date]}</published>
+          </entry>
+        EOS
+      }
+    end
+    content = File.open("./assets/xml/atom.tmpl").read.gsub(/\{###__LAST_UPDATED__###\}/, result.last[:date])
+    content = content.gsub(/\{###___BLOG_ENTRIES___###\}/, result.reverse.map{|a| a[:feed]}.join("\n"))
+    File.write("./atom.xml", content)
   end
 
 end
