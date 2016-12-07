@@ -5,7 +5,7 @@ require 'sitemap_generator'
 
 Encoding.default_external = "utf-8"
 
-task :compile => ["compile:asset", "compile:blog"]
+task :compile => ["compile:asset", "compile:blog", "compile:feed"]
 
 namespace :compile do
   desc 'concatinate js files and uglify it'
@@ -49,4 +49,8 @@ namespace :compile do
     end
   end
   
+  desc 'Generate RSS feed from json data'
+  task :feed do
+  end
+
 end
