@@ -1,4 +1,4 @@
-FROM ruby:2.2.5-slim
+FROM ruby:2.2.5
 ARG nodeVersion='v4.4.7'
 
 ENV PATH=/root/.nodebrew/current/bin:$PATH
