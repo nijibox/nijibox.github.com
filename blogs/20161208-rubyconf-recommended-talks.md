@@ -1,5 +1,7 @@
 RubyConfとRubyConf Taiwanに参加してきました
 
+このブログは[NIJIBOX Advent Calendar 2016](http://qiita.com/advent-calendar/2016/nijibox)の8日目の投稿です。
+
 ![A sight at CVG](blogs/20161208-rubyconf-recommended-talks/airport.jpg)
 
 開発室室長の@remoreです。11月10日〜12日の3日間でオハイオ州シンシナティで開催されていたRubyConf 2016と、12月2日〜3日の2日間で台湾で開催されたRubyConf Taiwan 2016に、主にSpeakerとして参加してきました。どちらのカンファレンスも会社の業務として出張で行ってきたものです。このブログでは2つのカンファレンスの中で最も興味を引いたTalkをいくつか紹介したいと思います。
