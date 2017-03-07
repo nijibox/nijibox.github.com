@@ -36,7 +36,7 @@ namespace :compile do
         title:File.open(f).to_a[0].chomp,
         text:File.open(f).to_a[1..-1].join
       }
-      create_entry.(result.last, result.last[:slug], (Dir.glob("blogs/#{File.basename(f)[0..-4]}/*.jpg").first || ""))
+      create_entry.(result.last, result.last[:slug], (Dir.glob("blogs/#{File.basename(f)[0..-4]}/*.{jpg,png}").first || ""))
     end 
     File.write("./assets/js/blog.js", File.open("./assets/js/blog.js.tmpl").read.gsub(/\{###___BLOG_ENTRIES___###\}/, result.reverse.map{|a| a.to_json}.join(",")))
     # generate sitemap.xml.gz
