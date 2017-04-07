@@ -3,18 +3,18 @@
     <title>NIJIBOX Engineer Blog</title>
     <link>http://tech.nijibox.jp/</link>
     <subtitle>俺が魂を込めれば</subtitle>
-    <updated>2017-04-07T00:00:00Z+0900</updated>
+    <updated>2017-04-10T00:00:00Z+0900</updated>
               <entry>
-            <title>株式会社HITさまと合同勉強会を実施しました</title>
+            <title>株式会社HIT様と合同勉強会を実施しました</title>
             <link>http://tech.nijibox.jp/seminar_with_hit</link>
             <id>http://tech.nijibox.jp/seminar_with_hit</id>
             <description><![CDATA[
-先月の3/27に、[株式会社ヒューマン インタラクティブ テクノロジー](http://www.hit-inc.jp/)さまと、「モバイル」をテーマとした合同勉強会を実施しました。
+先月の3/27に、[株式会社ヒューマン インタラクティブ テクノロジー](http://www.hit-inc.jp/)様と、「モバイル」をテーマとした合同勉強会を実施しました。
 
 Monacaパートナー勉強会にて、弊社下沢のLTをきっかけに「じゃあ合同勉強会でもどうでしょう」というきっかけで開催することとなりました。
 当日は、両社から計5件の発表がありました。
 
-![後方で撮ってみた様子](blogs/20170407-seminar_with_hit/session-0.jpg)
+![後方で撮ってみた様子](blogs/20170410-seminar_with_hit/session-0.jpg)
 
 ## 発表
 
@@ -36,21 +36,21 @@ Vue.jsと、それとOnsenUIを組み合わせる話について。
 MonacaアプリケーションのビルドをJenkinベースでのGitプッシュ駆動で行っていく話。
 LocalKitなどを駆使して、「可能な限り人の手を介さない」ビルド+デバッグまでの流れを解説してもらいました。
 
-![その1](blogs/20170407-seminar_with_hit/session-1.jpg)
+![その1](blogs/20170410-seminar_with_hit/session-1.jpg)
 
 ### ニジボックス「Monaca x Cordova plugin」
 
 Monacaの基本プラグインの外に機能を求めたときに巻き起こった事例。
 型にはまっている時の有用さと、そこかははずれようとするときにどうしても起きてしまう難しさについてのトークでした。
 
-![その2](blogs/20170407-seminar_with_hit/session-2.jpg)
+![その2](blogs/20170410-seminar_with_hit/session-2.jpg)
 
 ### ニジボックス「ネイティブエンジニアがMonacaを使ってみた」
 
 ネイティブアプリ畑のエンジニアから見たMonacaの使用感について。
 「できること」「できない(やりにくい)こと」を交えつつ、どの領域に向いているかなどの話をしてもらいました。
 
-![その3](blogs/20170407-seminar_with_hit/session-3.jpg)
+![その3](blogs/20170410-seminar_with_hit/session-3.jpg)
 
 
 
@@ -63,7 +63,7 @@ Monacaの基本プラグインの外に機能を求めたときに巻き起こ�
 
 ニジボックスとしても、今後も勉強会などの社外交流を広げていきたいと思います。
 ]]></description>
-            <published>2017-04-07T00:00:00Z+0900</published>
+            <published>2017-04-10T00:00:00Z+0900</published>
           </entry>
 
           <entry>
